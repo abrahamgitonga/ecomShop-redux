@@ -1,0 +1,35 @@
+.cart
+{
+color: white;
+font-size: 2rem;
+}
+
+.card-item
+{
+    width: 27.33%;
+    position: absolute;
+    top: 1rem;
+}
+
+.cards
+{
+    width: 980px;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 6rem;
+}
+
+.main-detail
+{
+    display: flex;
+    border: 1px solid #D5DBDB;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.trash
+{
+    color: red;
+}
