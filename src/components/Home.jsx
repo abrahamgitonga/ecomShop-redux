@@ -10,7 +10,7 @@ import {ADD} from '../redux/actions/Action'
 
 function Home({sendData}) {
     const { product } = useSelector(state => state.product);
-    console.log(product);
+    //console.log(product);
     const[menuData, setMenuData] = useState(Cardsdata);
     // console.log(menuData);
 

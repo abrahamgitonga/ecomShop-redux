@@ -64,6 +64,7 @@ function Header() {
           <Link to="/" className="text-white">
             Home
           </Link>
+          <Link to="/products">Products</Link>
         </NavItem>
 
         <NavbarText>
