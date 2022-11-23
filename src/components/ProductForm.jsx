@@ -1,21 +1,19 @@
 import React from 'react'
+import './styles.css'
 
 function ProductForm() {
   return (
     <>
-        <header>
-
-          <h2>Add Product</h2>
-
-        </header>
-          
-
-        <div>
-
-          <input placeholder='add a product' type="text" />
-          <button id='add-product'>Add Product</button>
-
-        </div>
+      <form className='product-form' action="">
+          <div className='container'>
+            <h2 className='title'>product name</h2>
+            <span className='label'>Product Name</span>
+            <input className='input' placeholder='add a product' type="text" />
+            <span className='label'></span>
+            <input className='button' type='submit'/>
+          </div>
+         
+      </form>   
             
        
 
@@ -27,4 +25,4 @@ function ProductForm() {
   )
 }
 
-export default ProductForm
+export default ProductForm;

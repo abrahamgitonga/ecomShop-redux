@@ -21,6 +21,7 @@ import {Link, useParams} from 'react-router-dom';
 import {DLT} from '../redux/actions/Action';
 
 
+
 function Header() {
   const [price, setPrice] = useState(0);
   // console.log(price);
@@ -60,10 +61,13 @@ function Header() {
     <div>
       <Navbar color="dark" className="header">
         <h3 className="text-white">E SHOP</h3>
-        <NavItem>
+        <NavItem id="nav-item">
           <Link to="/" className="text-white">
             Home
           </Link>
+
+          <Link to="/login">Login</Link>
+
           <Link to="/products">Products</Link>
         </NavItem>
 

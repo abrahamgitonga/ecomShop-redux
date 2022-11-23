@@ -1,18 +1,23 @@
-.cart
-{
-color: white;
-font-size: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card-item
-{
+.cart {
+    color: white;
+    font-size: 2rem;
+}
+
+.card-item {
     width: 27.33%;
     position: absolute;
     top: 1rem;
 }
 
-.cards
-{
+.cards {
     width: 980px;
     display: flex;
     gap: 5rem;
@@ -21,15 +26,86 @@ font-size: 2rem;
     left: 6rem;
 }
 
-.main-detail
-{
+.main-detail {
     display: flex;
     border: 1px solid #D5DBDB;
     justify-content: space-between;
     gap: 2rem;
 }
 
-.trash
-{
+.trash {
     color: red;
+}
+
+#nav-item {
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+/* forms */
+.product-form {
+    margin: 20px;
+    padding: 10px;
+}
+
+.login-form {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 65rem;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.title {
+    font-family: 'Patrick Hand';
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+
+}
+
+.label {
+    font-family: 'Patrick Hand';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px;
+    margin: 2px;
+
+}
+
+.input {
+    border-radius: 5px;
+    border: none;
+    background: whitesmoke;
+    padding: 5px;
+
+}
+
+.button {
+    font-family: 'Patrick Hand';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px;
+    margin: 25px auto;
+    border: none;
+    border-radius: 20px;
+    width: 55%;
+    color: white;
+    background-color: green;
+}
+
+.button:hover {
+    background-color: black;
+    transition: all ease 0.3s;
+
 }
