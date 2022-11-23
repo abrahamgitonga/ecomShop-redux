@@ -24,7 +24,9 @@ function CardDetails() {
   };
 
   useEffect(() => {
-    compare();
+    function compare(){ 
+    }
+    compare()
   }, [id]);
 
   const dlt = (id)=> {
@@ -34,7 +36,7 @@ function CardDetails() {
 
   return (
     <>
-      <h3 className="text-center m-5 p-2">Items Details Page</h3>
+      <h3 className="text-center m-5 p-2">Item Details</h3>
       <div className="container mx-auto main-detail">
    
                 {

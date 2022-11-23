@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
-import store from "./Store";
+// import store from "./Store";
+// import {}
 import { Provider } from "react-redux";
+import { store } from "./reduxStore";
 
 
 

@@ -23,7 +23,7 @@ import {DLT} from '../redux/actions/Action';
 
 function Header() {
   const [price, setPrice] = useState(0);
-  console.log(price);
+  // console.log(price);
   let dispatch = useDispatch();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -35,7 +35,8 @@ function Header() {
     setAnchorEl(null);
   };
 
-  const getData = useSelector((state) => state.cartReducer.carts);
+  // const getData = useSelector((state) => state.cartReducer.carts);
+  const { cart } = useSelector((state) => state.cart);
 
   const dlt = (id) => {
     dispatch(DLT(id))
@@ -44,7 +45,7 @@ function Header() {
   const total = () => 
   {
     let price = 0;
-    getData.map((el,id)=>{
+    cart.map((el,id)=>{
       return price += el.price
     });
     setPrice(price);
@@ -66,7 +67,7 @@ function Header() {
         </NavItem>
 
         <NavbarText>
-          <Badge badgeContent={getData ? getData.length : 0} color="success">
+          <Badge badgeContent={cart ? cart.length : 0} color="success">
             <AiOutlineShoppingCart
               className="cart"
               id="basic-button"
@@ -91,7 +92,7 @@ function Header() {
           <Card>
             <CardTitle>
               {
-                getData.length>0 ? <div style={{ width: "24rem", padding: 10 }}>
+                cart.length>0 ? <div style={{ width: "24rem", padding: 10 }}>
                   <Table>
                     <thead>
                       <tr>
@@ -101,7 +102,7 @@ function Header() {
                     </thead>
                     <tbody>
                       {
-                        getData.map((item)=>{
+                        cart.map((item)=>{
                           return(<><tr>
                             <td><Link to={`/cart/${item.id}`}><img src={item.imgdata} width="120" alt=""/></Link></td>
                             <td>
